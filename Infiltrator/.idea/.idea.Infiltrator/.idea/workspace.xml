@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfc8bbce-bbb8-4e25-9d30-a090a5b74108" name="Default" comment="" />
+    <list default="true" readonly="true" id="bfc8bbce-bbb8-4e25-9d30-a090a5b74108" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,27 +10,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="InputController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+            <state relative-caret-position="208">
+              <caret line="121" column="4" lean-forward="true" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
               <folding>
-                <marker date="1610649249786" expanded="false" signature="6:78" ph="..." />
-                <marker date="1610649249786" expanded="true" signature="124:5037" ph="{...}" />
-                <marker date="1610649249786" expanded="true" signature="905:1271" ph="{...}" />
-                <marker date="1610649249786" expanded="true" signature="1329:1617" ph="{...}" />
-                <marker date="1610649249786" expanded="true" signature="1425:1492" ph="/* ReadyWeapon(); ... */" />
-                <marker date="1610649249786" expanded="true" signature="1501:1611" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
-                <marker date="1610649249786" expanded="true" signature="1643:3081" ph="{...}" />
-                <marker date="1610649249786" expanded="true" signature="1957:2155" ph="/* Инвертирую направление движения, * -1 нужно, чтоб на &quot;S&quot; двигался вниз, а не вверх ... */" />
-                <marker date="1610649249786" expanded="true" signature="2500:2560" ph="{...}" />
-                <marker date="1610649249786" expanded="true" signature="2634:2721" ph="{...}" />
-                <marker date="1610649249786" expanded="true" signature="2734:2826" ph="{...}" />
-                <marker date="1610649249786" expanded="true" signature="3099:3258" ph="{...}" />
-                <marker date="1610649249786" expanded="true" signature="3264:4595" ph="/* void RotateCharacter() ... */" />
-                <marker date="1610649249786" expanded="true" signature="4602:5035" ph="/* void ReadyWeapon() ... */" />
+                <marker date="1610820112693" expanded="true" signature="6:181" ph="..." />
+                <marker date="1610820112693" expanded="true" signature="227:5485" ph="{...}" />
+                <marker date="1610820112693" expanded="true" signature="1094:1460" ph="{...}" />
+                <marker date="1610820112693" expanded="true" signature="1518:1982" ph="{...}" />
+                <marker date="1610820112693" expanded="true" signature="1676:1828" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
+                <marker date="1610820112693" expanded="true" signature="1866:1976" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+                <marker date="1610820112693" expanded="true" signature="2008:3214" ph="{...}" />
+                <marker date="1610820112693" expanded="true" signature="2564:2624" ph="{...}" />
+                <marker date="1610820112693" expanded="true" signature="2743:2842" ph="{...}" />
+                <marker date="1610820112693" expanded="true" signature="2855:2954" ph="{...}" />
+                <marker date="1610820112693" expanded="true" signature="3232:3391" ph="{...}" />
+                <marker date="1610820112693" expanded="true" signature="3426:5036" ph="{...}" />
+                <marker date="1610820112693" expanded="true" signature="3788:3957" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Horizontal&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
+                <marker date="1610820112693" expanded="true" signature="3967:5025" ph="/* if (ReadyWeaponMovement == false) ... */" />
+                <marker date="1610820112693" expanded="true" signature="5050:5483" ph="/* void ReadyWeapon() ... */" />
               </folding>
             </state>
           </provider>
@@ -59,10 +60,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="607" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="268" />
+    <option name="y" value="208" />
     <option name="width" value="1025" />
-    <option name="height" value="1088" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -70,6 +72,10 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -81,10 +87,6 @@
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
-      </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
       </pane>
     </panes>
   </component>
@@ -106,13 +108,14 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="5360">
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="5360" />
     </configuration>
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>C:\Users\Admin\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -122,11 +125,13 @@
       <option name="presentableId" value="Default" />
       <updated>1610644974874</updated>
       <workItem from="1610644978430" duration="3849000" />
+      <workItem from="1610724702642" duration="3020000" />
+      <workItem from="1610812976830" duration="7215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3849000" />
+    <option name="totallyTimeSpent" value="14084000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -138,31 +143,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10872483" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="7" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.21891892" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="NuGet" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.11486486" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,14 +179,75 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
+        <watch expression="targetSpeed" language="TEXT" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>targetSpeed</expression-string>
+        <language-id>TEXT</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/CharacterController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="42" />
+        <state relative-caret-position="1343">
+          <caret line="81" column="96" lean-forward="true" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="96" />
+          <folding>
+            <marker date="1610820112693" expanded="true" signature="6:181" ph="..." />
+            <marker date="1610820112693" expanded="true" signature="227:5485" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="1094:1460" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="1518:1982" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="1676:1828" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
+            <marker date="1610820112693" expanded="true" signature="1866:1976" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+            <marker date="1610820112693" expanded="true" signature="2008:3214" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="2564:2624" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="2743:2842" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="2855:2954" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="3232:3391" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="3426:5036" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="3788:3957" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Horizontal&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
+            <marker date="1610820112693" expanded="true" signature="3967:5025" ph="/* if (ReadyWeaponMovement == false) ... */" />
+            <marker date="1610820112693" expanded="true" signature="5050:5483" ph="/* void ReadyWeapon() ... */" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+          <folding>
+            <marker date="1610820112693" expanded="true" signature="6:181" ph="..." />
+            <marker date="1610820112693" expanded="true" signature="227:5485" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="1094:1460" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="1518:1982" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="1676:1828" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
+            <marker date="1610820112693" expanded="true" signature="1866:1976" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+            <marker date="1610820112693" expanded="true" signature="2008:3214" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="2564:2624" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="2743:2842" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="2855:2954" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="3232:3391" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="3426:5036" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="3788:3957" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Horizontal&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
+            <marker date="1610820112693" expanded="true" signature="3967:5025" ph="/* if (ReadyWeaponMovement == false) ... */" />
+            <marker date="1610820112693" expanded="true" signature="5050:5483" ph="/* void ReadyWeapon() ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/CharacterController.cs" />
     <entry file="file://$PROJECT_DIR$/../../LearnProject/Assets/Scripts/Character/Input/MovementInput.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -189,23 +257,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+        <state relative-caret-position="208">
+          <caret line="121" column="4" lean-forward="true" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
           <folding>
-            <marker date="1610649249786" expanded="false" signature="6:78" ph="..." />
-            <marker date="1610649249786" expanded="true" signature="124:5037" ph="{...}" />
-            <marker date="1610649249786" expanded="true" signature="905:1271" ph="{...}" />
-            <marker date="1610649249786" expanded="true" signature="1329:1617" ph="{...}" />
-            <marker date="1610649249786" expanded="true" signature="1425:1492" ph="/* ReadyWeapon(); ... */" />
-            <marker date="1610649249786" expanded="true" signature="1501:1611" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
-            <marker date="1610649249786" expanded="true" signature="1643:3081" ph="{...}" />
-            <marker date="1610649249786" expanded="true" signature="1957:2155" ph="/* Инвертирую направление движения, * -1 нужно, чтоб на &quot;S&quot; двигался вниз, а не вверх ... */" />
-            <marker date="1610649249786" expanded="true" signature="2500:2560" ph="{...}" />
-            <marker date="1610649249786" expanded="true" signature="2634:2721" ph="{...}" />
-            <marker date="1610649249786" expanded="true" signature="2734:2826" ph="{...}" />
-            <marker date="1610649249786" expanded="true" signature="3099:3258" ph="{...}" />
-            <marker date="1610649249786" expanded="true" signature="3264:4595" ph="/* void RotateCharacter() ... */" />
-            <marker date="1610649249786" expanded="true" signature="4602:5035" ph="/* void ReadyWeapon() ... */" />
+            <marker date="1610820112693" expanded="true" signature="6:181" ph="..." />
+            <marker date="1610820112693" expanded="true" signature="227:5485" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="1094:1460" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="1518:1982" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="1676:1828" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
+            <marker date="1610820112693" expanded="true" signature="1866:1976" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+            <marker date="1610820112693" expanded="true" signature="2008:3214" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="2564:2624" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="2743:2842" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="2855:2954" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="3232:3391" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="3426:5036" ph="{...}" />
+            <marker date="1610820112693" expanded="true" signature="3788:3957" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Horizontal&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
+            <marker date="1610820112693" expanded="true" signature="3967:5025" ph="/* if (ReadyWeaponMovement == false) ... */" />
+            <marker date="1610820112693" expanded="true" signature="5050:5483" ph="/* void ReadyWeapon() ... */" />
           </folding>
         </state>
       </provider>
