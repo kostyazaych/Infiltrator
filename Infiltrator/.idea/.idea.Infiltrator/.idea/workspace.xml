@@ -14,22 +14,22 @@
       <file leaf-file-name="InputController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/InputController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
+            <state relative-caret-position="459">
+              <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
               <folding>
-                <marker date="1611252842396" expanded="false" signature="6:181" ph="..." />
-                <marker date="1611252842396" expanded="true" signature="227:3827" ph="{...}" />
-                <marker date="1611252842396" expanded="true" signature="1128:1511" ph="{...}" />
-                <marker date="1611252842396" expanded="true" signature="1569:2016" ph="{...}" />
-                <marker date="1611252842396" expanded="true" signature="1718:1870" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
-                <marker date="1611252842396" expanded="true" signature="1900:2010" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
-                <marker date="1611252842396" expanded="true" signature="2042:3374" ph="{...}" />
-                <marker date="1611252842396" expanded="true" signature="2571:2698" ph="{...}" />
-                <marker date="1611252842396" expanded="true" signature="2711:2836" ph="{...}" />
-                <marker date="1611252842396" expanded="true" signature="2970:3030" ph="{...}" />
-                <marker date="1611252842396" expanded="true" signature="3392:3559" ph="{...}" />
-                <marker date="1611252842396" expanded="true" signature="3595:3812" ph="{...}" />
-                <marker date="1611252842396" expanded="true" signature="3839:4260" ph="/* void ReadyWeapon() ... */" />
+                <marker date="1611263487697" expanded="false" signature="6:181" ph="..." />
+                <marker date="1611263487697" expanded="true" signature="227:4148" ph="{...}" />
+                <marker date="1611263487697" expanded="true" signature="1126:1509" ph="{...}" />
+                <marker date="1611263487697" expanded="true" signature="1567:2014" ph="{...}" />
+                <marker date="1611263487697" expanded="true" signature="1716:1868" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
+                <marker date="1611263487697" expanded="true" signature="1898:2008" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+                <marker date="1611263487697" expanded="true" signature="2040:3695" ph="{...}" />
+                <marker date="1611263487697" expanded="true" signature="2636:2814" ph="{...}" />
+                <marker date="1611263487697" expanded="true" signature="2827:3101" ph="{...}" />
+                <marker date="1611263487697" expanded="true" signature="3200:3260" ph="{...}" />
+                <marker date="1611263487697" expanded="true" signature="3713:3880" ph="{...}" />
+                <marker date="1611263487697" expanded="true" signature="3916:4133" ph="{...}" />
+                <marker date="1611263487697" expanded="true" signature="4160:4581" ph="/* void ReadyWeapon() ... */" />
               </folding>
             </state>
           </provider>
@@ -59,22 +59,22 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1375" />
-    <option name="y" value="141" />
-    <option name="width" value="1384" />
-    <option name="height" value="787" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-133" />
+    <option name="y" value="208" />
+    <option name="width" value="1385" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -107,9 +107,9 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="21420">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="21420" />
+      <option name="pid" />
     </configuration>
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
@@ -129,11 +129,12 @@
       <workItem from="1610987496580" duration="4613000" />
       <workItem from="1610993173585" duration="648000" />
       <workItem from="1611247150701" duration="3875000" />
+      <workItem from="1611260038026" duration="3416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23813000" />
+    <option name="totallyTimeSpent" value="27229000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -145,23 +146,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1373" y="143" width="1107" height="629" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Unit Tests" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1642789" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11744966" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41344196" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41344196" />
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -195,41 +197,33 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/InputController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="1530">
+          <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
+          <folding>
+            <marker date="1611263487697" expanded="false" signature="6:181" ph="..." />
+            <marker date="1611263487697" expanded="true" signature="227:4148" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="1126:1509" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="1567:2014" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="1716:1868" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
+            <marker date="1611263487697" expanded="true" signature="1898:2008" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+            <marker date="1611263487697" expanded="true" signature="2040:3695" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="2636:2814" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="2827:3101" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="3200:3260" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="3713:3880" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="3916:4133" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="4160:4581" ph="/* void ReadyWeapon() ... */" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="106" column="9" lean-forward="true" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="121" column="4" lean-forward="true" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="81" column="96" lean-forward="true" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/CharacterController.cs" />
     <entry file="file://$PROJECT_DIR$/../../LearnProject/Assets/Scripts/Character/Input/MovementInput.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -238,31 +232,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/InputController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
+        <state relative-caret-position="459">
+          <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
           <folding>
-            <marker date="1611252842396" expanded="false" signature="6:181" ph="..." />
-            <marker date="1611252842396" expanded="true" signature="227:3827" ph="{...}" />
-            <marker date="1611252842396" expanded="true" signature="1128:1511" ph="{...}" />
-            <marker date="1611252842396" expanded="true" signature="1569:2016" ph="{...}" />
-            <marker date="1611252842396" expanded="true" signature="1718:1870" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
-            <marker date="1611252842396" expanded="true" signature="1900:2010" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
-            <marker date="1611252842396" expanded="true" signature="2042:3374" ph="{...}" />
-            <marker date="1611252842396" expanded="true" signature="2571:2698" ph="{...}" />
-            <marker date="1611252842396" expanded="true" signature="2711:2836" ph="{...}" />
-            <marker date="1611252842396" expanded="true" signature="2970:3030" ph="{...}" />
-            <marker date="1611252842396" expanded="true" signature="3392:3559" ph="{...}" />
-            <marker date="1611252842396" expanded="true" signature="3595:3812" ph="{...}" />
-            <marker date="1611252842396" expanded="true" signature="3839:4260" ph="/* void ReadyWeapon() ... */" />
+            <marker date="1611263487697" expanded="false" signature="6:181" ph="..." />
+            <marker date="1611263487697" expanded="true" signature="227:4148" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="1126:1509" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="1567:2014" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="1716:1868" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
+            <marker date="1611263487697" expanded="true" signature="1898:2008" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+            <marker date="1611263487697" expanded="true" signature="2040:3695" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="2636:2814" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="2827:3101" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="3200:3260" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="3713:3880" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="3916:4133" ph="{...}" />
+            <marker date="1611263487697" expanded="true" signature="4160:4581" ph="/* void ReadyWeapon() ... */" />
           </folding>
         </state>
       </provider>

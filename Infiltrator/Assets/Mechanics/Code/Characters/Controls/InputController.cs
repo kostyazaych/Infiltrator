@@ -19,7 +19,7 @@ public class InputController : MonoBehaviour
     private Vector3 rotation;
     
     private float speedSmoothVelocity = 0.05f;
-    private float speedSmoothTime = 0.01f;
+    public float speedSmoothTime = 0.2f;
     private Rigidbody RootRigidbody;
     private float jumpHeight = 1.0f;
     public float gravity = -9.81f;
@@ -77,26 +77,29 @@ public class InputController : MonoBehaviour
     private void Move()
     {
         Vector3 movementInput = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
+        Vector3 oldDirection = new Vector3(0f,0f,0f);
         movementInput.x = movementInput.x * -1;
         //Инвертирую направление движения, * -1 нужно, чтоб на "S" двигался вниз, а не вверх
-
+       
         Vector3 desiredMoveDirection = new Vector3(movementInput.y, 0, movementInput.x);
         desiredMoveDirection.Normalize();
-        desiredMoveDirection = transform.TransformDirection(desiredMoveDirection);
+        desiredMoveDirection = transform.TransformDirection(desiredMoveDirection);       
         
         if ( desiredMoveDirection.magnitude != 0)
         {
             movementType = 1;
-            CharacterAnimator.SetFloat(name: "Move", value: movementType);  
+            CharacterAnimator.SetInteger(name: "Move", value: movementType);  
+            oldDirection = desiredMoveDirection;
         }
         else
         {
             movementType = 0;
-            CharacterAnimator.SetFloat(name: "Move", value: movementType);
-        }
-        Debug.Log(movementType);
-        
+            CharacterAnimator.SetInteger(name: "Move", value: movementType);
+
+            Vector3 emptyVec = new Vector3(0f,0f,0f); 
+            desiredMoveDirection = Vector3.Lerp(oldDirection, emptyVec, 0.5f);
+           
+        }       
         
         Vector3 gravityVector = Vector3.zero;
 
@@ -105,12 +108,16 @@ public class InputController : MonoBehaviour
             gravityVector.y -= gravity;
         }
 
-        gravityVector.y = -9;
+        
+        Debug.Log(desiredMoveDirection);
+        gravityVector.y = -9;                   
         float targetSpeed = movementSpeed * desiredMoveDirection.magnitude;
-
-        currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedSmoothVelocity, speedSmoothTime);
+        currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedSmoothVelocity, speedSmoothTime);     
+        
         controller.Move(currentSpeed * Time.deltaTime * desiredMoveDirection + gravityVector * Time.deltaTime);
-       
+
+      
+        
     }
 
 
