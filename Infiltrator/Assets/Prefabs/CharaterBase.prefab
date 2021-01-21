@@ -2550,6 +2550,9 @@ MonoBehaviour:
   speedBuffCoef: 1
   gravity: -9.81
   mouseSense: 3
+  cameraHolder: {fileID: 1203599082400668792}
+  uplimit: -50
+  downLimit: 50
 --- !u!1 &7394766197047792365
 GameObject:
   m_ObjectHideFlags: 0
