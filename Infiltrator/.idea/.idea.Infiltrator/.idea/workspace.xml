@@ -14,8 +14,8 @@
       <file leaf-file-name="InputController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/InputController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
               <folding>
                 <marker date="1611263487697" expanded="false" signature="6:181" ph="..." />
                 <marker date="1611263487697" expanded="true" signature="227:4148" ph="{...}" />
@@ -59,7 +59,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-133" />
     <option name="y" value="208" />
     <option name="width" value="1385" />
@@ -129,12 +129,12 @@
       <workItem from="1610987496580" duration="4613000" />
       <workItem from="1610993173585" duration="648000" />
       <workItem from="1611247150701" duration="3875000" />
-      <workItem from="1611260038026" duration="3416000" />
+      <workItem from="1611260038026" duration="4068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27229000" />
+    <option name="totallyTimeSpent" value="27881000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -147,7 +147,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
@@ -235,8 +234,8 @@
     <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/InputController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+        <state relative-caret-position="136">
+          <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
           <folding>
             <marker date="1611263487697" expanded="false" signature="6:181" ph="..." />
             <marker date="1611263487697" expanded="true" signature="227:4148" ph="{...}" />
