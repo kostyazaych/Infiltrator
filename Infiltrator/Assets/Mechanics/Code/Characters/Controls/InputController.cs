@@ -25,7 +25,7 @@ public class InputController : MonoBehaviour
 
     private Camera PlayerCamera;
     private Vector3 TestVelocity;
-    public float mouseSense = 200f;
+    public float mouseSense = 500f;
 
 
 

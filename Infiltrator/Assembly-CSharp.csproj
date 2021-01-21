@@ -52,8 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Code\Characters\Controls\CharacterSwitch.cs" />
-    <Compile Include="Assets\Code\Characters\Controls\InputController.cs" />
+    <Compile Include="Assets\Mechanics\Code\Characters\Controls\InputController.cs" />
     <Reference Include="UnityEngine">
       <HintPath>A:/Unity/Editor/2020.2.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

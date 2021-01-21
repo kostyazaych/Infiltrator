@@ -4,11 +4,12 @@
     <e p="A:\Unity\UnityProjects\Infiltrator\Infiltrator" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Code" t="Include">
-          <e p="Characters" t="Include">
-            <e p="Controls" t="Include">
-              <e p="CharacterSwitch.cs" t="Include" />
-              <e p="InputController.cs" t="Include" />
+        <e p="Mechanics" t="Include">
+          <e p="Code" t="Include">
+            <e p="Characters" t="Include">
+              <e p="Controls" t="Include">
+                <e p="InputController.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>
