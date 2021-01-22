@@ -17,6 +17,7 @@ public class InputController : MonoBehaviour
     private float currentSpeed = 0f;
     [HideInInspector] public float speedBuffCoef = 1f;
     private Vector3 rotation;
+    Vector3 oldDirection = new Vector3(0f,0f,0f);
     
     private float speedSmoothVelocity = 0.05f;
     public float speedSmoothTime = 0.2f;
@@ -77,7 +78,6 @@ public class InputController : MonoBehaviour
     private void Move()
     {
         Vector3 movementInput = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        Vector3 oldDirection = new Vector3(0f,0f,0f);
         movementInput.x = movementInput.x * -1;
         //Инвертирую направление движения, * -1 нужно, чтоб на "S" двигался вниз, а не вверх
        
@@ -95,12 +95,9 @@ public class InputController : MonoBehaviour
         {
             movementType = 0;
             CharacterAnimator.SetInteger(name: "Move", value: movementType);
-
-            Vector3 emptyVec = new Vector3(0f,0f,0f); 
-            desiredMoveDirection = Vector3.Lerp(oldDirection, emptyVec, 0.5f);
-           
+            desiredMoveDirection = Vector3.SmoothDamp(oldDirection, new Vector3(0f,0f,0f), ref oldDirection, speedSmoothTime);      
         }       
-        
+
         Vector3 gravityVector = Vector3.zero;
 
         if (!controller.isGrounded)
@@ -108,16 +105,11 @@ public class InputController : MonoBehaviour
             gravityVector.y -= gravity;
         }
 
-        
-        Debug.Log(desiredMoveDirection);
         gravityVector.y = -9;                   
         float targetSpeed = movementSpeed * desiredMoveDirection.magnitude;
-        currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedSmoothVelocity, speedSmoothTime);     
         
+        currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedSmoothVelocity, speedSmoothTime);            
         controller.Move(currentSpeed * Time.deltaTime * desiredMoveDirection + gravityVector * Time.deltaTime);
-
-      
-        
     }
 
 
