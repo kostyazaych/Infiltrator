@@ -25,6 +25,8 @@ public class InputController : MonoBehaviour
     private float jumpHeight = 1.0f;
     public float gravity = -9.81f;
 
+    [HideInInspector] public bool slowMovementMode = false;
+    
     private Camera PlayerCamera;
     private Vector3 TestVelocity;
     public float mouseSense = 500f;
@@ -87,7 +89,17 @@ public class InputController : MonoBehaviour
         
         if ( desiredMoveDirection.magnitude != 0)
         {
-            movementType = 1;
+            if (slowMovementMode)
+            {
+                movementType = 1;
+                movementSpeed = 3f;
+            }
+            else
+            {
+                movementType = 2;
+                movementSpeed = 6f;
+            }
+
             CharacterAnimator.SetInteger(name: "Move", value: movementType);  
             oldDirection = desiredMoveDirection;
         }
@@ -125,8 +137,6 @@ public class InputController : MonoBehaviour
 
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
-        Vector3 rotation;
-
         this.transform.Rotate(0, mouseX * mouseSense * Time.deltaTime, 0);
         }       
       }
