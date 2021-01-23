@@ -23,8 +23,7 @@ public class AnimationEventsController : MonoBehaviour
     void TransitAnimaStateMachine(string Leg)
     {
         if (Leg != null)
-        {
-            Debug.Log(Leg);
+        {          
             if (Leg == "Right")
                 CharacterAnimator.SetTrigger("RightLeg");
             else if (Leg == "Left")

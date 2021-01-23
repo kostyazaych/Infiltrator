@@ -84,20 +84,21 @@ public class InputController : MonoBehaviour
        
         Vector3 desiredMoveDirection = new Vector3(movementInput.y, 0, movementInput.x);
         desiredMoveDirection.Normalize();
-        desiredMoveDirection = transform.TransformDirection(desiredMoveDirection);       
+        desiredMoveDirection = transform.TransformDirection(desiredMoveDirection);  
+       
         
         if ( desiredMoveDirection.magnitude != 0)
         {
             if (slowMovementMode)
             {
                 movementType = 1;
-                movementSpeed = 3f;
+                movementSpeed = 3f ;
                 SendParametersToAnimationNetwork(CharacterAnimator, movementType, desiredMoveDirection, movementSpeed );
             }
             else
             {
                 movementType = 2;
-                movementSpeed = 6f;
+                movementSpeed = 6f * desiredMoveDirection.x;
                 SendParametersToAnimationNetwork(CharacterAnimator, movementType, desiredMoveDirection, movementSpeed );
             }
             //Debug.Log(movementSpeed);
@@ -148,10 +149,9 @@ public class InputController : MonoBehaviour
         
        // Quaternion rotation = Quaternion.LookRotation(inputDirection, new Vector3(0f,1f,0f));
         
-        float Look = Vector3.Angle(-transform.forward, inputDirection);;
-        //= Quaternion.Euler(rotation.y);
+        float Look = Vector3.Angle(transform.forward, inputDirection);;
+        //= Quaternion.Euler(rotation.y);  
         Debug.Log(Look);
-        
         inputCharacterAnimator.SetInteger(name: "Move", value: inputMovementType);          
         inputCharacterAnimator.SetFloat(name: "Direction", value: Look);
         inputCharacterAnimator.SetFloat(name: "Speed", value: inputSpeed);      
