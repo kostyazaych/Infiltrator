@@ -14,28 +14,48 @@
       <file leaf-file-name="InputController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/InputController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+            <state relative-caret-position="476">
+              <caret line="169" column="35" lean-forward="true" selection-start-line="169" selection-start-column="35" selection-end-line="169" selection-end-column="35" />
               <folding>
-                <marker date="1611362148256" expanded="true" signature="6:181" ph="..." />
-                <marker date="1611362148256" expanded="true" signature="227:5891" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="1240:1623" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="1681:2221" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="1923:2075" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
-                <marker date="1611362148256" expanded="true" signature="2105:2215" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
-                <marker date="1611362148256" expanded="true" signature="2260:2335" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="2364:4512" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="2906:3585" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="2950:3169" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="3186:3405" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="3418:3526" ph="/* Debug.Log(movementSpeed); ... */" />
-                <marker date="1611362148256" expanded="true" signature="3607:3986" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="4077:4137" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="4530:4697" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="4733:4921" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="5183:5650" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="5700:5889" ph="{...}" />
-                <marker date="1611362148256" expanded="true" signature="5903:6324" ph="/* void ReadyWeapon() ... */" />
+                <marker date="1611413708345" expanded="true" signature="6:200" ph="..." />
+                <marker date="1611413708345" expanded="true" signature="247:6243" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="1323:1794" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="1852:2210" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="2094:2204" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+                <marker date="1611413708345" expanded="true" signature="2239:4388" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="2781:3460" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="2825:3044" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="3061:3280" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="3293:3401" ph="/* Debug.Log(movementSpeed); ... */" />
+                <marker date="1611413708345" expanded="true" signature="3482:3862" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="3953:4013" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="4406:4575" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="4611:4799" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="5061:5534" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="5085:5249" ph="/* Quaternion rotation = Quaternion.LookRotation(inputDirection, new Vector3(0f,1f,0f)); ... */" />
+                <marker date="1611413708345" expanded="true" signature="5584:6227" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="5615:6221" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="5685:5901" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="5937:6153" ph="{...}" />
+                <marker date="1611413708345" expanded="true" signature="6255:6676" ph="/* void ReadyWeapon() ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnimationEventsController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/AnimationEventsController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding>
+                <marker date="1611412647356" expanded="false" signature="6:78" ph="..." />
+                <marker date="1611412647356" expanded="true" signature="134:993" ph="{...}" />
+                <marker date="1611412647356" expanded="true" signature="311:387" ph="{...}" />
+                <marker date="1611412647356" expanded="true" signature="445:506" ph="{...}" />
+                <marker date="1611412647356" expanded="true" signature="553:853" ph="{...}" />
+                <marker date="1611412647356" expanded="true" signature="584:847" ph="{...}" />
+                <marker date="1611412647356" expanded="true" signature="913:991" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -43,8 +63,14 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>debug</find>
+    </findStrings>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../LearnProject/Assets/Scripts/Character/Input/MovementInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/AnimationEventsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/InputController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -53,6 +79,7 @@
         <option value="$PROJECT_DIR$/Assets/Code/Characters/Controls/CharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/AnimationInputController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/AnimationEventsController.cs" />
         <option value="$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/InputController.cs" />
       </list>
     </option>
@@ -67,21 +94,21 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="28" />
-    <option name="y" value="356" />
+    <option name="x" value="-103" />
+    <option name="y" value="220" />
     <option name="width" value="1385" />
-    <option name="height" value="789" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -137,12 +164,13 @@
       <workItem from="1610993173585" duration="648000" />
       <workItem from="1611247150701" duration="3875000" />
       <workItem from="1611260038026" duration="4068000" />
-      <workItem from="1611330707699" duration="11640000" />
+      <workItem from="1611330707699" duration="12206000" />
+      <workItem from="1611401400356" duration="7414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39521000" />
+    <option name="totallyTimeSpent" value="47501000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -165,7 +193,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.118791945" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12013423" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="7" />
       <window_info anchor="right" id="Database" order="3" />
@@ -207,28 +235,60 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/InputController.cs">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+          <folding>
+            <marker date="1611413708345" expanded="true" signature="6:200" ph="..." />
+            <marker date="1611413708345" expanded="true" signature="247:6243" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="1323:1794" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="1852:2210" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2094:2204" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+            <marker date="1611413708345" expanded="true" signature="2239:4388" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2781:3460" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2825:3044" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3061:3280" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3293:3401" ph="/* Debug.Log(movementSpeed); ... */" />
+            <marker date="1611413708345" expanded="true" signature="3482:3862" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3953:4013" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="4406:4575" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="4611:4799" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5061:5534" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5085:5249" ph="/* Quaternion rotation = Quaternion.LookRotation(inputDirection, new Vector3(0f,1f,0f)); ... */" />
+            <marker date="1611413708345" expanded="true" signature="5584:6227" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5615:6221" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5685:5901" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5937:6153" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="6255:6676" ph="/* void ReadyWeapon() ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/InputController.cs">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
           <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
           <folding>
-            <marker date="1611362148256" expanded="true" signature="6:181" ph="..." />
-            <marker date="1611362148256" expanded="true" signature="227:5891" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="1240:1623" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="1681:2221" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="1923:2075" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
-            <marker date="1611362148256" expanded="true" signature="2105:2215" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
-            <marker date="1611362148256" expanded="true" signature="2260:2335" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="2364:4512" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="2906:3585" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="2950:3169" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="3186:3405" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="3418:3526" ph="/* Debug.Log(movementSpeed); ... */" />
-            <marker date="1611362148256" expanded="true" signature="3607:3986" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="4077:4137" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="4530:4697" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="4733:4921" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="5183:5650" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="5700:5889" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="5903:6324" ph="/* void ReadyWeapon() ... */" />
+            <marker date="1611413708345" expanded="true" signature="6:200" ph="..." />
+            <marker date="1611413708345" expanded="true" signature="247:6243" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="1323:1794" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="1852:2210" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2094:2204" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+            <marker date="1611413708345" expanded="true" signature="2239:4388" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2781:3460" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2825:3044" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3061:3280" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3293:3401" ph="/* Debug.Log(movementSpeed); ... */" />
+            <marker date="1611413708345" expanded="true" signature="3482:3862" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3953:4013" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="4406:4575" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="4611:4799" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5061:5534" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5085:5249" ph="/* Quaternion rotation = Quaternion.LookRotation(inputDirection, new Vector3(0f,1f,0f)); ... */" />
+            <marker date="1611413708345" expanded="true" signature="5584:6227" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5615:6221" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5685:5901" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5937:6153" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="6255:6676" ph="/* void ReadyWeapon() ... */" />
           </folding>
         </state>
       </provider>
@@ -238,25 +298,27 @@
         <state relative-caret-position="1530">
           <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
           <folding>
-            <marker date="1611362148256" expanded="true" signature="6:181" ph="..." />
-            <marker date="1611362148256" expanded="true" signature="227:5891" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="1240:1623" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="1681:2221" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="1923:2075" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
-            <marker date="1611362148256" expanded="true" signature="2105:2215" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
-            <marker date="1611362148256" expanded="true" signature="2260:2335" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="2364:4512" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="2906:3585" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="2950:3169" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="3186:3405" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="3418:3526" ph="/* Debug.Log(movementSpeed); ... */" />
-            <marker date="1611362148256" expanded="true" signature="3607:3986" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="4077:4137" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="4530:4697" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="4733:4921" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="5183:5650" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="5700:5889" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="5903:6324" ph="/* void ReadyWeapon() ... */" />
+            <marker date="1611413708345" expanded="true" signature="6:200" ph="..." />
+            <marker date="1611413708345" expanded="true" signature="247:6243" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="1323:1794" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="1852:2210" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2094:2204" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+            <marker date="1611413708345" expanded="true" signature="2239:4388" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2781:3460" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2825:3044" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3061:3280" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3293:3401" ph="/* Debug.Log(movementSpeed); ... */" />
+            <marker date="1611413708345" expanded="true" signature="3482:3862" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3953:4013" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="4406:4575" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="4611:4799" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5061:5534" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5085:5249" ph="/* Quaternion rotation = Quaternion.LookRotation(inputDirection, new Vector3(0f,1f,0f)); ... */" />
+            <marker date="1611413708345" expanded="true" signature="5584:6227" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5615:6221" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5685:5901" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5937:6153" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="6255:6676" ph="/* void ReadyWeapon() ... */" />
           </folding>
         </state>
       </provider>
@@ -275,37 +337,49 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Code/Characters/Controls/InputController.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/AnimationInputController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/AnimationInputController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/AnimationEventsController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="340">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <marker date="1611412647356" expanded="false" signature="6:78" ph="..." />
+            <marker date="1611412647356" expanded="true" signature="134:993" ph="{...}" />
+            <marker date="1611412647356" expanded="true" signature="311:387" ph="{...}" />
+            <marker date="1611412647356" expanded="true" signature="445:506" ph="{...}" />
+            <marker date="1611412647356" expanded="true" signature="553:853" ph="{...}" />
+            <marker date="1611412647356" expanded="true" signature="584:847" ph="{...}" />
+            <marker date="1611412647356" expanded="true" signature="913:991" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Mechanics/Code/Characters/Controls/InputController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        <state relative-caret-position="476">
+          <caret line="169" column="35" lean-forward="true" selection-start-line="169" selection-start-column="35" selection-end-line="169" selection-end-column="35" />
           <folding>
-            <marker date="1611362148256" expanded="true" signature="6:181" ph="..." />
-            <marker date="1611362148256" expanded="true" signature="227:5891" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="1240:1623" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="1681:2221" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="1923:2075" ph="/* this.rotation = new Vector3(0, Input.GetAxisRaw(&quot;Mouse X&quot;) * mouseSense * Time.deltaTime, 0); ... */" />
-            <marker date="1611362148256" expanded="true" signature="2105:2215" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
-            <marker date="1611362148256" expanded="true" signature="2260:2335" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="2364:4512" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="2906:3585" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="2950:3169" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="3186:3405" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="3418:3526" ph="/* Debug.Log(movementSpeed); ... */" />
-            <marker date="1611362148256" expanded="true" signature="3607:3986" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="4077:4137" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="4530:4697" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="4733:4921" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="5183:5650" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="5700:5889" ph="{...}" />
-            <marker date="1611362148256" expanded="true" signature="5903:6324" ph="/* void ReadyWeapon() ... */" />
+            <marker date="1611413708345" expanded="true" signature="6:200" ph="..." />
+            <marker date="1611413708345" expanded="true" signature="247:6243" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="1323:1794" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="1852:2210" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2094:2204" ph="/* if (Input.GetButton(&quot;Fire1&quot;)) ... */" />
+            <marker date="1611413708345" expanded="true" signature="2239:4388" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2781:3460" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="2825:3044" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3061:3280" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3293:3401" ph="/* Debug.Log(movementSpeed); ... */" />
+            <marker date="1611413708345" expanded="true" signature="3482:3862" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="3953:4013" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="4406:4575" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="4611:4799" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5061:5534" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5085:5249" ph="/* Quaternion rotation = Quaternion.LookRotation(inputDirection, new Vector3(0f,1f,0f)); ... */" />
+            <marker date="1611413708345" expanded="true" signature="5584:6227" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5615:6221" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5685:5901" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="5937:6153" ph="{...}" />
+            <marker date="1611413708345" expanded="true" signature="6255:6676" ph="/* void ReadyWeapon() ... */" />
           </folding>
         </state>
       </provider>

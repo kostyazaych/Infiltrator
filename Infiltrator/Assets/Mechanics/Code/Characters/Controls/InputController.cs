@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using UnityEditor;
 using UnityEngine;
 using Quaternion = UnityEngine.Quaternion;
-using Vector3 = UnityEngine.Vector3;
+using Vector3 = UnityEngine.Vector3; 
 
 public class InputController : MonoBehaviour
 {
@@ -35,7 +36,8 @@ public class InputController : MonoBehaviour
 
     private Transform player;
     private Transform mainCameraTransform = null;
- 
+
+    public AnimationEventsController animationEventsController;
 
     
     /// /////////////////
@@ -51,7 +53,7 @@ public class InputController : MonoBehaviour
         PlayerCamera = GetComponentInChildren<Camera>();
         RootRigidbody = GetComponentInChildren<Rigidbody>();
         mainCameraTransform = PlayerCamera.transform;
-
+        animationEventsController = GetComponentInChildren<AnimationEventsController>();
 
     }
 
@@ -65,20 +67,12 @@ public class InputController : MonoBehaviour
 
         //ReadyWeapon();
         RotateCharacter();
-       
-        //TransitAnimaStateMachine(CharacterAnimator.GetCurrentAnimatorStateInfo(0));
-        /*this.rotation = new Vector3(0, Input.GetAxisRaw("Mouse X") * mouseSense * Time.deltaTime, 0);
-        this.transform.Rotate(this.rotation);
-        */
+        TransitAnimaStateMachine(animationEventsController.stringParam);
 
         //Attacking
         /* if (Input.GetButton("Fire1"))
              GetComponent<CharacterBase>().CharacterAttack();
              */
-    }
-
-    public void PrintEvent(string s) {
-        Debug.Log("PrintEvent: " + s + " called at: " + Time.time);
     }
     
     private void Move()
@@ -114,7 +108,7 @@ public class InputController : MonoBehaviour
         {
             movementType = 0;
             SendParametersToAnimationNetwork(CharacterAnimator, movementType, desiredMoveDirection, movementSpeed );
-           // CharacterAnimator.SetInteger(name: "Move", value: movementType);
+            // CharacterAnimator.SetInteger(name: "Move", value: movementType);
             desiredMoveDirection = Vector3.SmoothDamp(oldDirection, new Vector3(0f,0f,0f), ref oldDirection, speedSmoothTime);      
         }       
 
@@ -137,7 +131,7 @@ public class InputController : MonoBehaviour
     {
         playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         controller.Move(playerVelocity * Time.deltaTime);
-        Debug.Log("JUMP");
+       // Debug.Log("JUMP");
     }
 
     private void RotateCharacter()
@@ -151,24 +145,40 @@ public class InputController : MonoBehaviour
     public void SendParametersToAnimationNetwork (Animator inputCharacterAnimator, int inputMovementType, Vector3 inputDirection, float inputSpeed) //direction = 0f;  0 - forward; -90 - left; 90 - right | movementType = 0; 0 - stands; 1 - walk; 2 - run
     {
         
-        Quaternion rotation = Quaternion.LookRotation(inputDirection, new Vector3(0f,1f,0f));
-        float Look = rotation.z;
+        //Quaternion rotation = Quaternion.LookRotation(inputDirection, new Vector3(0f,1f,0f));
+       // float Look = rotation.z;
         //= Quaternion.Euler(rotation.y);
         
         
         inputCharacterAnimator.SetInteger(name: "Move", value: inputMovementType);          
-        inputCharacterAnimator.SetFloat(name: "Direction", value: Look);
+       // inputCharacterAnimator.SetFloat(name: "Direction", value: Look);
         inputCharacterAnimator.SetFloat(name: "Speed", value: inputSpeed);
         
         
     }    
     void TransitAnimaStateMachine(string Leg)
     {
-        if (Leg == "Right")           
-            CharacterAnimator.SetTrigger("RightLeg");
-        else if(Leg == "Left")
-            CharacterAnimator.SetTrigger("LeftLeg");
+        if (Leg != null)
+        {
+            Debug.Log(Leg);
+            if (Leg == "Right")
+            {
+                CharacterAnimator.SetTrigger("RightLeg");
+                CharacterAnimator.ResetTrigger("LeftLeg");
+                CharacterAnimator.SetFloat(name: "LegIdle", value: 1);
+            }
+            else if (Leg == "Left")
+            {
+                CharacterAnimator.SetTrigger("LeftLeg");
+                CharacterAnimator.ResetTrigger("RightLeg");
+                CharacterAnimator.SetFloat(name: "LegIdle", value: 0);
+            }
+            animationEventsController.stringParam = null;
+        }
     }
+    
+    
+   
 }
 
     

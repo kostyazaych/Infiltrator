@@ -8,6 +8,7 @@
           <e p="Code" t="Include">
             <e p="Characters" t="Include">
               <e p="Controls" t="Include">
+                <e p="AnimationEventsController.cs" t="Include" />
                 <e p="InputController.cs" t="Include" />
               </e>
             </e>
