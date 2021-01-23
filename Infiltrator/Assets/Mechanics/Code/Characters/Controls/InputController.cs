@@ -25,7 +25,7 @@ public class InputController : MonoBehaviour
     private float jumpHeight = 1.0f;
     public float gravity = -9.81f;
 
-    [HideInInspector] public bool slowMovementMode = false;
+    [HideInInspector] public bool slowMovementMode = true;
     
     private Camera PlayerCamera;
     private Vector3 TestVelocity;
@@ -65,7 +65,8 @@ public class InputController : MonoBehaviour
 
         //ReadyWeapon();
         RotateCharacter();
-
+       
+        //TransitAnimaStateMachine(CharacterAnimator.GetCurrentAnimatorStateInfo(0));
         /*this.rotation = new Vector3(0, Input.GetAxisRaw("Mouse X") * mouseSense * Time.deltaTime, 0);
         this.transform.Rotate(this.rotation);
         */
@@ -76,7 +77,10 @@ public class InputController : MonoBehaviour
              */
     }
 
-
+    public void PrintEvent(string s) {
+        Debug.Log("PrintEvent: " + s + " called at: " + Time.time);
+    }
+    
     private void Move()
     {
         Vector3 movementInput = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -93,20 +97,24 @@ public class InputController : MonoBehaviour
             {
                 movementType = 1;
                 movementSpeed = 3f;
+                SendParametersToAnimationNetwork(CharacterAnimator, movementType, desiredMoveDirection, movementSpeed );
             }
             else
             {
                 movementType = 2;
                 movementSpeed = 6f;
+                SendParametersToAnimationNetwork(CharacterAnimator, movementType, desiredMoveDirection, movementSpeed );
             }
-
-            CharacterAnimator.SetInteger(name: "Move", value: movementType);  
+            //Debug.Log(movementSpeed);
+            //CharacterAnimator.SetInteger(name: "Move", value: movementType);  
             oldDirection = desiredMoveDirection;
         }
+        
         else
         {
             movementType = 0;
-            CharacterAnimator.SetInteger(name: "Move", value: movementType);
+            SendParametersToAnimationNetwork(CharacterAnimator, movementType, desiredMoveDirection, movementSpeed );
+           // CharacterAnimator.SetInteger(name: "Move", value: movementType);
             desiredMoveDirection = Vector3.SmoothDamp(oldDirection, new Vector3(0f,0f,0f), ref oldDirection, speedSmoothTime);      
         }       
 
@@ -138,8 +146,30 @@ public class InputController : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
         this.transform.Rotate(0, mouseX * mouseSense * Time.deltaTime, 0);
-        }       
-      }
+      }    
+    
+    public void SendParametersToAnimationNetwork (Animator inputCharacterAnimator, int inputMovementType, Vector3 inputDirection, float inputSpeed) //direction = 0f;  0 - forward; -90 - left; 90 - right | movementType = 0; 0 - stands; 1 - walk; 2 - run
+    {
+        
+        Quaternion rotation = Quaternion.LookRotation(inputDirection, new Vector3(0f,1f,0f));
+        float Look = rotation.z;
+        //= Quaternion.Euler(rotation.y);
+        
+        
+        inputCharacterAnimator.SetInteger(name: "Move", value: inputMovementType);          
+        inputCharacterAnimator.SetFloat(name: "Direction", value: Look);
+        inputCharacterAnimator.SetFloat(name: "Speed", value: inputSpeed);
+        
+        
+    }    
+    void TransitAnimaStateMachine(string Leg)
+    {
+        if (Leg == "Right")           
+            CharacterAnimator.SetTrigger("RightLeg");
+        else if(Leg == "Left")
+            CharacterAnimator.SetTrigger("LeftLeg");
+    }
+}
 
     
 
