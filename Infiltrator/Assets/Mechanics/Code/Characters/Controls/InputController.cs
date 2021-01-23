@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using Unity.Collections;
 using UnityEditor;
 using UnityEngine;
 using Quaternion = UnityEngine.Quaternion;
@@ -160,7 +161,8 @@ public class InputController : MonoBehaviour
     {
         if (Leg != null)
         {
-            Debug.Log(Leg);
+            
+            
             if (Leg == "Right")
             {
                 CharacterAnimator.SetTrigger("RightLeg");
@@ -172,7 +174,7 @@ public class InputController : MonoBehaviour
                 CharacterAnimator.SetTrigger("LeftLeg");
                 CharacterAnimator.ResetTrigger("RightLeg");
                 CharacterAnimator.SetFloat(name: "LegIdle", value: 0);
-            }
+            }       
             animationEventsController.stringParam = null;
         }
     }
