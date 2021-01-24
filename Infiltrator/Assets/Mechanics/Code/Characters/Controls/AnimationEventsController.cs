@@ -5,8 +5,8 @@ using UnityEngine;
 public class AnimationEventsController : MonoBehaviour
 {
     private Animator CharacterAnimator;
-    public string eventName;
-    public string stringParam;
+   [HideInInspector] public string eventName;
+   [HideInInspector] public string stringParam;
     
     // Start is called before the first frame update
     void Start()

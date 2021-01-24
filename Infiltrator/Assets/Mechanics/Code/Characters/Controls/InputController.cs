@@ -147,14 +147,14 @@ public class InputController : MonoBehaviour
     public void SendParametersToAnimationNetwork (Animator inputCharacterAnimator, int inputMovementType, Vector3 inputDirection, float inputSpeed) //direction = 0f;  0 - forward; -90 - left; 90 - right | movementType = 0; 0 - stands; 1 - walk; 2 - run
     {
         
-       // Quaternion rotation = Quaternion.LookRotation(inputDirection, new Vector3(0f,1f,0f));
+        //Quaternion rotation =  Quaternion.Euler(inputDirection);
         
-        float Look = Vector3.Angle(transform.forward, inputDirection);;
-        //= Quaternion.Euler(rotation.y);  
+        float Look = Vector3.Angle(transform.forward, inputDirection);
+         
         Debug.Log(Look);
         inputCharacterAnimator.SetInteger(name: "Move", value: inputMovementType);          
         inputCharacterAnimator.SetFloat(name: "Direction", value: Look);
-        inputCharacterAnimator.SetFloat(name: "Speed", value: inputSpeed);      
+        inputCharacterAnimator.SetFloat(name: "Speed", value: inputSpeed, dampTime: 1f, deltaTime: 1f);      
     }    
     void TransitAnimaStateMachine(string Leg)
     {
